@@ -1,32 +1,968 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FYJC App Portal</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Crucial Healthy Salad - Fresh, healthy salads delivered to your doorstep in Hadapsar, Pune, Maharashtra. Order now for fast 1-hour delivery!">
+    <meta name="keywords" content="healthy salad, fresh salad, salad delivery, Hadapsar, Pune, healthy food, organic salad">
+    <meta name="author" content="Crucial Healthy Salad">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="Crucial Healthy Salad - Fresh Salads Delivered">
+    <meta property="og:description" content="Order fresh, healthy salads delivered to your doorstep in Hadapsar, Pune">
+    <meta property="og:type" content="website">
+    
+    <title>Crucial Healthy Salad - Fresh & Healthy Salads Delivered | Hadapsar, Pune</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="app-frame">
-
-    <div class="menu-btn" id="menuBtn">
-      <div class="dot"></div>
-      <div class="dot"></div>
-      <div class="dot"></div>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div id="announcement" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+    
+    <div class="top-bar">
+        <div class="container">
+            <div class="top-bar-content">
+                <div class="top-bar-left">
+                    <span><i class="fas fa-phone-alt"></i> <a href="tel:+919075181070">+91 9075181070</a></span>
+                    <span><i class="fas fa-envelope"></i> <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></span>
+                </div>
+                <div class="top-bar-right">
+                    <span><i class="fas fa-map-marker-alt"></i> Hadapsar, Pune</span>
+                    <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <div class="sidebar" id="sidebar">
-      <h2>FYJC Portal</h2>
-      <button onclick="loadPage('https://home-zeta-seven.vercel.app/')">🏠 Home</button>
-      <button onclick="loadPage('https://syllabus-phi.vercel.app/')">📚 Syllabus</button>
-      <button onclick="loadPage('https://notice-jet-six.vercel.app/')">📢 Notice</button>
-      <button onclick="loadPage('https://about-1-nu.vercel.app/')">ℹ️ About</button>
-      <button onclick="loadPage('https://imp-note-sigma.vercel.app/')">📝 Important Note</button>
+    
+    <nav class="navbar" role="navigation" aria-label="Main Navigation">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>Crucial Healthy Salad</h1>
+            </div>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+                <span class="menu-icon"></span>
+            </button>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#benefits" class="nav-link">Health Benefits</a></li>
+                <li><a href="#testimonials" class="nav-link">Reviews</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li class="dropdown">
+                    <button class="nav-link dropdown-toggle" aria-expanded="false">
+                        Policies <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="#shipping">Shipping Policy</a></li>
+                        <li><a href="#terms">Terms & Conditions</a></li>
+                        <li><a href="#refund">Refund Policy</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li>
+                    <button class="cart-btn" aria-label="View shopping cart" id="cartButton">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-text">
+                <span class="hero-badge">🥗 100% Fresh & Organic</span>
+                <h2 class="hero-title">Fresh, Healthy Salads Delivered to Your Doorstep</h2>
+                <p class="hero-subtitle">Nutritious meals prepared fresh daily in Hadapsar, Pune, Maharashtra</p>
+                <div class="hero-features">
+                    <div class="hero-feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <span>1 Hour Delivery</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-leaf"></i>
+                        <span>100% Fresh</span>
+                    </div>
+                    <div class="hero-feature">
+                        <i class="fas fa-truck"></i>
+                        <span>Free Delivery in 2km</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#menu" class="cta-button primary-btn">Order Now</a>
+                    <a href="#about" class="cta-button secondary-btn">Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=800&q=80" alt="Fresh healthy salad bowl">
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <a href="#about" aria-label="Scroll down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+    
+    <section class="stats-section">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <i class="fas fa-users stat-icon"></i>
+                    <h3 class="stat-number" data-target="1000">0</h3>
+                    <p class="stat-label">Happy Customers</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-utensils stat-icon"></i>
+                    <h3 class="stat-number" data-target="50">0</h3>
+                    <p class="stat-label">Salad Varieties</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-clock stat-icon"></i>
+                    <h3 class="stat-number" data-target="60">0</h3>
+                    <p class="stat-label">Minutes Delivery</p>
+                </div>
+                <div class="stat-card">
+                    <i class="fas fa-star stat-icon"></i>
+                    <h3 class="stat-number" data-target="5">0</h3>
+                    <p class="stat-label">Star Rating</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">About Us</span>
+                <h2 class="section-title">Why Choose Crucial Healthy Salad?</h2>
+                <p class="section-description">We are committed to providing the freshest, healthiest, and most delicious salads in Pune</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=800&q=80" alt="Fresh ingredients">
+                    <div class="about-badge">
+                        <i class="fas fa-award"></i>
+                        <span>Premium Quality</span>
+                    </div>
+                </div>
+                
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Crucial Healthy Salad was founded with a simple mission: to make healthy eating convenient, delicious, and accessible to everyone in Hadapsar and surrounding areas.</p>
+                    <p>Every salad is prepared fresh with locally sourced ingredients, ensuring maximum nutrition and flavor.</p>
+                    
+                    <div class="about-points">
+                        <div class="about-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Fresh Daily Preparation</h4>
+                                <p>All orders prepared fresh after confirmation</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Quality Ingredients</h4>
+                                <p>Locally sourced, organic vegetables</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Fast Delivery</h4>
+                                <p>Delivered within 1 hour to your doorstep</p>
+                            </div>
+                        </div>
+                        <div class="about-point">
+                            <i class="fas fa-check-circle"></i>
+                            <div>
+                                <h4>Customer Satisfaction</h4>
+                                <p>100% satisfaction guarantee</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Promise</span>
+                <h2 class="section-title">What Makes Us Special</h2>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+                    <h3>Fresh Ingredients</h3>
+                    <p>All salads prepared fresh at the time of order using only the highest quality ingredients.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shipping-fast"></i></div>
+                    <h3>Fast Delivery</h3>
+                    <p>Delivered within 1 hour of confirmation.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Healthy Options</h3>
+                    <p>Nutritious combinations designed by experts.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-map-marker-alt"></i></div>
+                    <h3>Local Service</h3>
+                    <p>Serving Hadapsar with free delivery within 2 km.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+                    <h3>Affordable Pricing</h3>
+                    <p>Quality healthy food at reasonable prices.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3>Safe & Hygienic</h3>
+                    <p>Prepared following all safety protocols.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Our Menu</span>
+                <h2 class="section-title">Fresh Salad Selection</h2>
+                <p class="section-description">Choose from our wide variety of delicious and nutritious salads</p>
+            </div>
+            
+            <div class="menu-filters">
+                <button class="filter-btn active" data-filter="all">All Salads</button>
+                <button class="filter-btn" data-filter="veg">Vegetarian</button>
+                <button class="filter-btn" data-filter="protein">High Protein</button>
+                <button class="filter-btn" data-filter="fruit">Fruit Based</button>
+                <button class="filter-btn" data-filter="low-cal">Low Calorie</button>
+            </div>
+            
+            <div class="menu-grid" id="menuGrid"></div>
+            
+            <div class="load-more-container">
+                <button class="load-more-btn" id="loadMoreBtn">
+                    <span>Load More Salads</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+    <section id="benefits" class="benefits-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Health Benefits</span>
+                <h2 class="section-title">Why Eat Salads Daily?</h2>
+            </div>
+            
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=400&q=80" alt="Nutrition">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-dna"></i> Rich in Nutrients</h3>
+                        <p>Salads provide essential vitamins, minerals, and antioxidants.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=400&q=80" alt="Weight">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-weight"></i> Weight Management</h3>
+                        <p>Low in calories but high in fiber.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1505253716362-afaea1d3d1af?auto=format&fit=crop&w=400&q=80" alt="Digestion">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-heartbeat"></i> Better Digestion</h3>
+                        <p>Fiber promotes healthy digestion.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1511688878353-3a2f5be94cd7?auto=format&fit=crop&w=400&q=80" alt="Skin">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-spa"></i> Glowing Skin</h3>
+                        <p>Vitamins promote healthy, radiant skin.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1476124369491-c4b1d9c3ea03?auto=format&fit=crop&w=400&q=80" alt="Energy">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-bolt"></i> Energy Boost</h3>
+                        <p>Natural nutrients provide sustained energy.</p>
+                    </div>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-image">
+                        <img src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&w=400&q=80" alt="Heart">
+                    </div>
+                    <div class="benefit-content">
+                        <h3><i class="fas fa-heart"></i> Heart Health</h3>
+                        <p>Supports cardiovascular health.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="testimonials" class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Testimonials</span>
+                <h2 class="section-title">What Our Customers Say</h2>
+            </div>
+            
+            <div class="testimonials-slider">
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Absolutely love the fresh salads from Crucial! The delivery is always on time and the quality is exceptional."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Customer">
+                        <div>
+                            <h4>Priya Sharma</h4>
+                            <p>Hadapsar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Best salad delivery service in Pune! Fresh ingredients, great taste, and super fast delivery."</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=2" alt="Customer">
+                        <div>
+                            <h4>Rahul Deshmukh</h4>
+                            <p>Hadapsar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"I've been ordering for months now. The variety is amazing and everything tastes so fresh!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=3" alt="Customer">
+                        <div>
+                            <h4>Sneha Patel</h4>
+                            <p>Hadapsar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p class="testimonial-text">"Perfect for busy professionals. Quick delivery, healthy options, and delicious taste!"</p>
+                    <div class="testimonial-author">
+                        <img src="https://i.pravatar.cc/150?img=4" alt="Customer">
+                        <div>
+                            <h4>Amit Kumar</h4>
+                            <p>Hadapsar, Pune</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">FAQ</span>
+                <h2 class="section-title">Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What are your delivery hours?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We deliver from 9:00 AM to 9:00 PM daily. Orders are typically delivered within 1 hour of confirmation.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Do you offer customization options?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! You can add special instructions during checkout.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How can I track my order?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>After placing your order, you'll receive updates via SMS/email.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What payment methods do you accept?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We accept online payments and Cash on Delivery.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I cancel or modify my order?</span>
+                        <i class="fas fa-plus"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Orders can be canceled within 5 minutes of placing.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <div class="newsletter-text">
+                    <h2>Subscribe to Our Newsletter</h2>
+                    <p>Get exclusive offers and health tips</p>
+                </div>
+                <form class="newsletter-form" id="newsletterForm">
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <section id="accessibility" class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <i class="fas fa-universal-access policy-icon"></i>
+                <h2>Accessibility Statement</h2>
+            </div>
+            
+            <div class="policy-content">
+                <p class="lead">Crucial Healthy Salad is committed to making our website accessible to everyone, including people with disabilities. We are continually improving the user experience for all visitors and applying relevant accessibility standards.</p>
+                
+                <h3>Our Commitment</h3>
+                <p>We aim to follow the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA, which outline how to make web content more accessible.</p>
+                <p>We strive to ensure that our website works well with screen readers, keyboard navigation, and assistive technologies.</p>
+                <p>We regularly review our site to identify and fix potential accessibility barriers.</p>
+                
+                <h3>Accessibility Features</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Clear headings, labels, and navigation for ease of use.</li>
+                    <li><i class="fas fa-check"></i> Text alternatives for images of our salads and products.</li>
+                    <li><i class="fas fa-check"></i> High-contrast design and readable fonts.</li>
+                    <li><i class="fas fa-check"></i> Compatibility with modern browsers and assistive technologies.</li>
+                </ul>
+                
+                <h3>Ongoing Efforts</h3>
+                <p>Accessibility is an ongoing effort. As we continue to improve our online store, we will work to ensure that new content and features also meet accessibility standards.</p>
+                
+                <h3>Feedback</h3>
+                <p>We welcome your feedback on the accessibility of our website. If you encounter any barriers or have suggestions for improvement, please contact us:</p>
+                
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+                
+                <p class="note">We try to respond to feedback within 2 business days.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section id="shipping" class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <i class="fas fa-shipping-fast policy-icon"></i>
+                <h2>Shipping Policy</h2>
+            </div>
+            
+            <div class="policy-content">
+                <p class="lead">At Crucial Healthy Salad, we are committed to delivering fresh and healthy salads to your doorstep as quickly as possible.</p>
+                
+                <h3>Delivery Area</h3>
+                <p>Our store is located in <strong>Hadapsar, Pune, Maharashtra</strong>.</p>
+                <p>We currently deliver within and around the Hadapsar area.</p>
+                
+                <h3>Delivery Charges</h3>
+                <div class="pricing-table">
+                    <div class="pricing-row">
+                        <span class="pricing-label">Within 2 km radius</span>
+                        <span class="pricing-value free">FREE</span>
+                    </div>
+                    <div class="pricing-row">
+                        <span class="pricing-label">Beyond 2 km</span>
+                        <span class="pricing-value">₹20 per km</span>
+                    </div>
+                </div>
+                
+                <h3>Delivery Time</h3>
+                <p>We aim to deliver your order <strong>within 1 hour</strong> of confirmation.</p>
+                <p>Delivery time may vary slightly depending on traffic, order size, or unforeseen circumstances, but we always strive for fast service.</p>
+                
+                <h3>Order Processing</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Orders are prepared fresh after confirmation.</li>
+                    <li><i class="fas fa-check"></i> You will receive an update once your order is out for delivery.</li>
+                </ul>
+                
+                <h3>Contact</h3>
+                <p>For any questions about your delivery, please contact us:</p>
+                
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="terms" class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <i class="fas fa-file-contract policy-icon"></i>
+                <h2>Terms & Conditions</h2>
+            </div>
+            
+            <div class="policy-content">
+                <p class="lead">Welcome to Crucial Healthy Salad. By accessing or using our website and placing an order, you agree to the following terms and conditions. Please read them carefully.</p>
+                
+                <h3>1. General</h3>
+                <p>This website is owned and operated by Crucial Healthy Salad, located in Hadapsar, Pune, Maharashtra.</p>
+                <p>By using our website, you agree to follow these terms and conditions as well as all applicable laws and regulations.</p>
+                
+                <h3>2. Products & Services</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> All salads are prepared fresh at the time of order.</li>
+                    <li><i class="fas fa-check"></i> We strive to ensure product descriptions and prices are accurate, but we reserve the right to correct errors at any time.</li>
+                    <li><i class="fas fa-check"></i> Images shown on the website are for representation only; actual product presentation may vary slightly.</li>
+                </ul>
+                
+                <h3>3. Orders & Payments</h3>
+                <p>Orders are confirmed only after successful payment or cash-on-delivery confirmation (if available).</p>
+                <p>You are responsible for providing accurate delivery details (address, phone number, etc.). We are not responsible for delays or failed deliveries caused by incorrect information.</p>
+                
+                <h3>4. Delivery Policy</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Free delivery is available within a 2 km radius of our store.</li>
+                    <li><i class="fas fa-check"></i> Beyond 2 km, delivery is charged at ₹20 per km.</li>
+                    <li><i class="fas fa-check"></i> We aim to deliver within 1 hour, but delivery times may vary depending on traffic, order volume, or other circumstances.</li>
+                </ul>
+                
+                <h3>5. Cancellation & Refunds</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Orders may be canceled within 5 minutes of placing the order.</li>
+                    <li><i class="fas fa-check"></i> Refunds are subject to our Refund & Cancellation Policy.</li>
+                    <li><i class="fas fa-check"></i> Perishable items (salads) cannot be returned once delivered.</li>
+                </ul>
+                
+                <h3>6. Pricing & Charges</h3>
+                <p>All prices are listed in Indian Rupees (INR) and include applicable taxes unless stated otherwise.</p>
+                <p>We reserve the right to change prices, delivery charges, or offers at any time without prior notice.</p>
+                
+                <h3>7. Customer Responsibilities</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Customers must ensure they are available to receive their order at the given address.</li>
+                    <li><i class="fas fa-check"></i> Any delays or spoilage caused by the customer's unavailability at the delivery location will not be our responsibility.</li>
+                </ul>
+                
+                <h3>8. Limitation of Liability</h3>
+                <p>We are not responsible for any allergic reactions, health issues, or damages arising from the consumption of our products. Customers are advised to check ingredients before placing an order.</p>
+                <p>Our liability is limited only to the value of the order placed.</p>
+                
+                <h3>9. Privacy</h3>
+                <p>We respect your privacy and protect your personal information. Please refer to our Privacy Policy for details.</p>
+                
+                <h3>10. Changes to Terms</h3>
+                <p>We reserve the right to update or modify these Terms & Conditions at any time. Changes will be effective immediately when posted on our website.</p>
+                
+                <h3>11. Contact Us</h3>
+                <p>If you have any questions about these Terms & Conditions, please contact us:</p>
+                
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="refund" class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <i class="fas fa-undo-alt policy-icon"></i>
+                <h2>Refund & Cancellation Policy</h2>
+            </div>
+            
+            <div class="policy-content">
+                <p class="lead">At Crucial Healthy Salad, we prepare every order fresh to ensure the highest quality. We want you to be completely satisfied with your purchase.</p>
+                
+                <h3>Order Cancellation</h3>
+                <p>Orders can be canceled <strong>within 5 minutes</strong> of placing the order.</p>
+                <p>Once preparation has started, cancellations will not be accepted.</p>
+                
+                <p>To cancel your order, please contact us immediately at:</p>
+                
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+                
+                <h3>Refunds</h3>
+                <p>If your order is canceled within the allowed time, you will receive a <strong>full refund</strong>.</p>
+                <p>Refunds are processed to your original payment method within <strong>3–5 business days</strong>.</p>
+                
+                <h3>Non-Refundable Situations</h3>
+                <p>Since salads are perishable, we cannot accept returns or provide refunds in the following cases:</p>
+                
+                <ul class="policy-list red-list">
+                    <li><i class="fas fa-times-circle"></i> If the order has already been delivered.</li>
+                    <li><i class="fas fa-times-circle"></i> If you simply change your mind after delivery.</li>
+                    <li><i class="fas fa-times-circle"></i> If incorrect details (address/phone number) were provided by the customer.</li>
+                </ul>
+                
+                <h3>Refund Exceptions</h3>
+                <p>We may provide a replacement or refund if:</p>
+                
+                <ul class="policy-list green-list">
+                    <li><i class="fas fa-check-circle"></i> You received the wrong order.</li>
+                    <li><i class="fas fa-check-circle"></i> Your order was not delivered within the promised time due to our error.</li>
+                    <li><i class="fas fa-check-circle"></i> There is a genuine issue with the quality of the food.</li>
+                </ul>
+                
+                <h3>Contact Us</h3>
+                <p>For any issues with your order, please reach out:</p>
+                
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="privacy" class="policy-section">
+        <div class="container">
+            <div class="policy-header">
+                <i class="fas fa-shield-alt policy-icon"></i>
+                <h2>Privacy Policy</h2>
+            </div>
+            
+            <div class="policy-content">
+                <p class="lead">At Crucial Healthy Salad, we are committed to protecting your privacy and personal information.</p>
+                
+                <h3>Information We Collect</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> Personal Information: Name, email, phone, address</li>
+                    <li><i class="fas fa-check"></i> Order Information: Items purchased, order history</li>
+                    <li><i class="fas fa-check"></i> Payment Information: Securely processed by third-party gateways</li>
+                </ul>
+                
+                <h3>How We Use Your Information</h3>
+                <ul class="policy-list">
+                    <li><i class="fas fa-check"></i> To process and deliver your orders</li>
+                    <li><i class="fas fa-check"></i> To provide customer support</li>
+                    <li><i class="fas fa-check"></i> To send promotional offers (with consent)</li>
+                </ul>
+                
+                <h3>Contact Us</h3>
+                <div class="contact-box">
+                    <p><i class="fas fa-envelope"></i> Email: <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                    <p><i class="fas fa-phone"></i> Phone: <a href="tel:+919075181070">+91 9075181070</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-badge">Contact Us</span>
+                <h2 class="section-title">Get in Touch</h2>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info-wrapper">
+                    <h3>Contact Information</h3>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Hadapsar, Pune, Maharashtra</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-phone"></i></div>
+                        <div>
+                            <h4>Phone</h4>
+                            <p><a href="tel:+919075181070">+91 9075181070</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-item">
+                        <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Follow Us</h4>
+                        <div class="social-icons-large">
+                            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-wrapper">
+                    <h3>Send us a Message</h3>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="contactName">Name: <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email: <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactMessage">Message: <span class="required">*</span></label>
+                            <textarea id="contactMessage" name="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <div id="cartModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Your Shopping Cart</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body" id="cartItems"></div>
+            <div class="modal-footer">
+                <div class="cart-summary">
+                    <div class="cart-total-row">
+                        <span>Subtotal:</span>
+                        <span id="cartSubtotal">₹0</span>
+                    </div>
+                </div>
+                <button class="checkout-btn" id="checkoutBtn">
+                    <span>Proceed to Checkout</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <button class="continue-shopping-btn">Continue Shopping</button>
+            </div>
+        </div>
     </div>
-
-    <iframe id="contentFrame" src="https://home-zeta-seven.vercel.app/"></iframe>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+    
+    <div id="checkoutModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content checkout-modal-content">
+            <div class="modal-header">
+                <h2>Checkout</h2>
+                <button class="close-btn">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="checkoutForm">
+                    <div class="checkout-section">
+                        <h3><i class="fas fa-user"></i> Personal Information</h3>
+                        <div class="form-group">
+                            <label for="custName">Full Name: <span class="required">*</span></label>
+                            <input type="text" id="custName" name="custName" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="custPhone">Phone: <span class="required">*</span></label>
+                                <input type="tel" id="custPhone" name="custPhone" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="custEmail">Email: <span class="required">*</span></label>
+                                <input type="email" id="custEmail" name="custEmail" required>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-section">
+                        <h3><i class="fas fa-map-marker-alt"></i> Delivery Information</h3>
+                        <div class="form-group">
+                            <label for="custAddress">Address: <span class="required">*</span></label>
+                            <textarea id="custAddress" name="custAddress" rows="3" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="distance">Distance (km): <span class="required">*</span></label>
+                            <input type="number" id="distance" name="distance" min="0" step="0.1" value="1" required>
+                            <small class="help-text">Enter distance from Hadapsar for delivery charge</small>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-section">
+                        <h3><i class="fas fa-credit-card"></i> Payment Method</h3>
+                        <div class="payment-options">
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="online" checked>
+                                <div class="payment-option-content">
+                                    <i class="fas fa-globe"></i>
+                                    <span>Online Payment</span>
+                                </div>
+                            </label>
+                            <label class="payment-option">
+                                <input type="radio" name="payment" value="cod">
+                                <div class="payment-option-content">
+                                    <i class="fas fa-money-bill-wave"></i>
+                                    <span>Cash on Delivery</span>
+                                </div>
+                            </label>
+                        </div>
+                    </div>
+                    
+                    <div class="checkout-section">
+                        <h3><i class="fas fa-receipt"></i> Order Summary</h3>
+                        <div class="order-summary">
+                            <div class="summary-row">
+                                <span>Subtotal:</span>
+                                <span id="checkoutSubtotal">₹0</span>
+                            </div>
+                            <div class="summary-row">
+                                <span>Delivery:</span>
+                                <span id="deliveryCharge">₹0</span>
+                            </div>
+                            <div class="summary-row total">
+                                <span>Total:</span>
+                                <span id="totalAmount">₹0</span>
+                            </div>
+                        </div>
+                        <div class="delivery-note">
+                            <i class="fas fa-clock"></i>
+                            <span>Delivery time: <strong>1 hour</strong></span>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="place-order-btn">
+                        <span>Place Order</span>
+                        <i class="fas fa-check-circle"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div id="successModal" class="modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content success-modal">
+            <div class="modal-body">
+                <div class="success-icon"><i class="fas fa-check-circle"></i></div>
+                <h2>Order Placed Successfully!</h2>
+                <p id="successMessage">Thank you for your order.</p>
+                <button class="cta-button primary-btn" onclick="closeSuccessModal()">Continue Shopping</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Crucial Healthy Salad</h3>
+                    </div>
+                    <p>Fresh, healthy salads delivered to your doorstep.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="#accessibility">Accessibility</a></li>
+                        <li><a href="#shipping">Shipping</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#refund">Refund</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul class="footer-contact">
+                        <li><i class="fas fa-map-marker-alt"></i> Hadapsar, Pune</li>
+                        <li><i class="fas fa-phone"></i> <a href="tel:+919075181070">+91 9075181070</a></li>
+                        <li><i class="fas fa-envelope"></i> <a href="mailto:crucialhealthysalad@gmail.com">crucialhealthysalad@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Crucial Healthy Salad. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
